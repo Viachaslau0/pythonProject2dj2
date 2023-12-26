@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Добро пожаловать в наш ресторан!</title>
+</head>
+<body>
+    <h2>Добро пожаловать в наш ресторан!</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ register_form.as_p }}
+        <button type="submit">Регистрация</button>
+    </form>
+</body>
+</html>
